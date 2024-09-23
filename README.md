@@ -1,46 +1,15 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Cherry Leaves Detector
 
-## Template Instructions
+Powdery mildew detector is an app that can predict if cherry leaves contains powdery mildew or are. The app makes predicts if a leaf is healty or not.
 
-Welcome,
+This app is designed based on a supervised, single-label, binary classification ML model. Binary classifier is used to predict the outcome.
 
-This is the Code Institute student template for the Cherry Leaves project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
 
-## How to use this repo
+[View live project here](https://cherry-leaves-detector-4bfba1113616.herokuapp.com/)
 
-1. Use this template to create your GitHub project repo
 
-1. Log into your cloud IDE with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and `pip3 install -r requirements.txt`
-
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
-
-1. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace, so it will be Python-3.8.18 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, then you can create a new one with _Regenerate API Key_.
+![Responsive image]()
 
 ## Dataset Content
 
@@ -88,26 +57,37 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## ML Business Case
 
 
-- From the dataset we want to develop a supervised binary classification machine learning model to accurately predict the presence of powdery mildew on cherry leaves. The goal is to streamline the disease detection process, reducing manual labor and enhancing the efficiency of cherry plantation management.
+- Improved Text:
+ - Problem Statement:
 
-- Currently the disease is identified manually and it takes around 30 minutes for each tree. The process is very time-consuming and it is not scalable.
+- Objective: Develop a supervised binary classification machine learning model to accurately predict the presence of powdery mildew on cherry leaves.
+Motivation: Streamline disease detection, reduce manual labor, and enhance cherry plantation management efficiency.
+Current Approach: Manual identification is time-consuming and not scalable, taking approximately 30 minutes per tree.
+Model Output:
 
-- The model output is defined as a flag, indicating if the leaf contains any feature that can show that the tree is infected. The staff of the plantation will take a picture of some leaves of the tree and upload them to the App. The prediction is made on the fly.
+- Target Variable: A binary flag indicating the presence or absence of powdery mildew.
+Prediction: The model will output a probability score, with values above a specified threshold indicating the presence of the disease.
+Success Metric:
 
-- The success metric has been set at 97% accuracy on the test set or above.
+- Accuracy: Target a test set accuracy of 97% or higher.
+Business Benefits:
 
-- The company will benefit by improving the quality of their product.
+- Improved Product Quality: Early detection of powdery mildew can lead to more effective disease management and higher-quality cherry harvests.
+Dataset and Preprocessing:
 
-- The training data can be found from Kaggle. This contains 4208 Images. All images are uniformed at (256,256,256,3). To ensure the performance is not affected we will reduce the image shape to something around 100x100.
+- Training Data: Utilize the Kaggle dataset containing 4208 images of cherry leaves.
+Image Preprocessing: Reduce image dimensions to approximately 100x100 to optimize training time and computational resources.
 
 ## Dashboard Design change !!!!!
 
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 - Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
-## Unfixed Bugs  change !!!!!
+## Unfixed Bugs
 
-- 
+- Initially when I creates an app on Heroku, the stack by default does not support the Python version that I was using, so I had to change the stack of my project from 22 to 20.
+
+- The slug size was a bit to big so i had to add some files in .slugignore file.
 
 ## Deployment
 

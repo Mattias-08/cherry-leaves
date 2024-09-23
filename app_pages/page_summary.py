@@ -29,3 +29,7 @@ def page_summary_body():
         f"1. **Visual Differentiation:** Develop a method to visually distinguish healthy cherry leaves from those infected with powdery mildew.\n\n"
         f"2. **Disease Classification:** Create a model capable of accurately classifying a given cherry leaf image as healthy or infected."
     )
+
+    st.write(
+        f"For additional information, please visit and **read** the "
+        f"[Project README file](https://github.com/Mattias-08/cherry-leaves/blob/main/README.md).")
