@@ -58,15 +58,47 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+- A leaf affected by powdery mildew exhibits several features that can differentiate them from healthy ones. Typical characteristics of infected leaf include display of particular marks/signs and morphological changes.  For example, leaves being light in color and roughly-circular. Additional indistinguishable feature is the presence of powder-looking patches on young and susceptible leaves. 
+
+- An Image Montage can define a typical powdery mildew leaf based on the presence of fine white marks. On the other hand, studies based on Average Image, Variability Image, and Difference between Averages didn't reveal any clear pattern to differentiate leaves.
+
+- The ML model will be able to distinguish between a healthy and an infected cherry leaf with at least 97% accuracy.
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+## Rationale to map the business requirements to the Data Visualizations and ML tasks
+
+
+### Business Requirement 1: Data visualisation
+
+- As a  client I want to display the "mean" and "standard deviation" of healthy cherry leaf images and cherry leaves that contain powdery mildew, so that I can visually differentiate both the leaves
+
+- As a client I want to display the difference between an average cherry leaf that is healthy and a cherry leaf infected with powdery mildew, enabling to visually distinguish between them.
+
+- As a client I want to display an image montage for cherry leaves that are healthy and cherry leaves that contain powdery mildew, so that I can visually differentiate cherry leaves.
+
+
+### Business Requirement 2: Classification of images
+
+- As a client I want to predict if a given cherry leaf is healthy or contains powdery mildew.
+
+- As a client I want to build a ML model and generate reports.
+
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+
+- From the dataset we want to develop a supervised binary classification machine learning model to accurately predict the presence of powdery mildew on cherry leaves. The goal is to streamline the disease detection process, reducing manual labor and enhancing the efficiency of cherry plantation management.
+
+- Currently the disease is identified manually and it takes around 30 minutes for each tree. The process is very time-consuming and it is not scalable.
+
+- The model output is defined as a flag, indicating if the leaf contains any feature that can show that the tree is infected. The staff of the plantation will take a picture of some leaves of the tree and upload them to the App. The prediction is made on the fly.
+
+- The success metric has been set at 97% accuracy on the test set or above.
+
+- The company will benefit by improving the quality of their product.
+
+- The training data can be found from Kaggle. This contains 4208 Images. All images are uniformed at (256,256,256,3). To ensure the performance is not affected we will reduce the image shape to something around 100x100.
 
 ## Dashboard Design
 
