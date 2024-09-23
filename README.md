@@ -100,20 +100,20 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 - The training data can be found from Kaggle. This contains 4208 Images. All images are uniformed at (256,256,256,3). To ensure the performance is not affected we will reduce the image shape to something around 100x100.
 
-## Dashboard Design
+## Dashboard Design change !!!!!
 
 - List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
 - Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
-## Unfixed Bugs
+## Unfixed Bugs  change !!!!!
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+- 
 
 ## Deployment
 
 ### Heroku
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
+- The App live link is: `https://cherry-leaves-detector-4bfba1113616.herokuapp.com/`
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
@@ -126,24 +126,54 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+### Languages
+
+Python
+
+### Frameworks and other technologies
+
+1. **Git**: Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
+2. **GitHub:** GitHub is used to store the projects code after being pushed from Git.
+
+3. **Balsamiq**: Balsamiq is used to create wireframes.
+
+4. **Heroku**: It is a container-based cloud platform used for deployment.
+
+### Data Analysis and Machine Learning Libraries 
+
+Following are the list of libraries used in the project
+
+1. **Numpy**: A powerful Python library for working with arrays and matrices, offering efficient mathematical operations and linear algebra functions.
+
+2. **Pandas**: A versatile data analysis tool that provides structures like DataFrames for organizing and manipulating data, making it easy to clean, explore, and analyze datasets.
+
+3. **Matplotlib**:  A flexible plotting library that allows you to create various types of visualizations like line plots, scatter plots, histograms, and bar charts to explore and understand data.
+
+4. **Seaborn**: A higher-level data visualization library built on top of Matplotlib, offering a more consistent and aesthetically pleasing style, making it easier to create visually appealing plots.
+
+5. **Plotly**: It is an interactive, open-soource, and browser-based gra6.	Tensorflow: It is an open-sourec machine learning platform focused on deep neural networks.phing library. Used to create visualisations within Jupyter notebooks to present the data.
+
+6. **Tensorflow**: A popular open-source machine learning framework that is widely used for building and training deep neural networks, making it a powerful tool for tasks like image recognition, natural language processing, and predictive modeling.
+
+7. **Shutil**: Used form file copying and removal.
+
+8. **Streamlit**: It is used to create web apps for data science and machine learning.
+
+9. **Joblib**: It is a set of tools  to provide lightweighting pipelining in Python.
+
+10. **PIL**:  A library that adds support for working with images in Python, allowing you to open, manipulate, and save images in various formats.
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+- [Code Institute Malaria Walk Through Project](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/) : The code and design was taken from  Code-Institute-Org/WalkthroughProject01. It helped me alot with understanding the concepts of Machine-learning and i only changed some small parts.
+
+- [GyanShashwat1611/WalkthroughProject01](https://github.com/GyanShashwat1611/WalkthroughProject01) github repository was used for code reference and assistance for in the jupyter notebook set up and for the app page design.
+
+- [alerebal/Powdery Mildew] (https://github.com/Code-Institute-Submissions/milestone-project-mildew-detection-in-cherry-leaves.git) in Cherry Leaves Detector: Readme guidance
 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- Streamlit documentation
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
-## Acknowledgements (optional)
-
-- Thank the people who provided support throughout this project.
+- Code Institute Lecture and Videos 
