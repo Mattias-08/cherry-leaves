@@ -86,18 +86,18 @@ Wireframes have been used for designing the layout of dashboard. Wireframes can 
 
 
 
-![Project Summary Page]()
+![Project Summary Page](docs/Project%20summary%20page.png)
 
 
-![Leaves Visualizer Page]()
+![Leaves Visualizer Page](docs/Leaves%20visualiser.png)
 
-![Mildew Detector Page]()
-
-
-![Project Hypothesis Page]()
+![Mildew Detector Page](docs/Powdery%20midlew%20detection.png)
 
 
-![ML Performance Page]()
+![Project Hypothesis Page](docs/Project%20hypothesis.png)
+
+
+![ML Performance Page](docs/ML%20performance.png)
 
 A dashboard is set to present the models and data to the client.
 
