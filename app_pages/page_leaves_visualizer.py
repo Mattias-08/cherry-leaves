@@ -12,8 +12,8 @@ import random
 def page_leaves_visualizer_body():
     st.write("### Leaves Visualizer")
     st.info(
-        f"* The client is interested in having a study that visually "
-        f"differentiates a powdery mildew leaf from an normal leaf cell.")
+f"This page visually compares **healthy** cherry leaves and those infected with **powdery mildew**.")
+
     
     version = 'v1'
     if st.checkbox("Difference between average and variability image"):
@@ -22,20 +22,26 @@ def page_leaves_visualizer_body():
       avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
       st.warning(
-        f"* We notice the average and variability images did not show "
-        f"patterns where we could intuitively differentiate one from another. " 
-        f"However, a small difference in the colour pigment of the average images is seen for both labels.")
+        f"A significant visual difference in consistent coloring has been observed:\n"
+        f"- Infected leaves exhibit more white blotches on their surface compared to healthy leaves,\n"
+        f"  which display a more uniform greenish color.\n"
+        f"However, the average and variability images did not reveal clear patterns\n"
+        f"for distinguishing infected leaves from healthy ones."
+      )
 
-      st.image(avg_powdery_mildew, caption='Parasitised Cell - Average and Variability')
-      st.image(avg_healthy, caption='Uninfected Cell - Average and Variability')
+      st.image(avg_powdery_mildew, caption='Powdery mildew leaf - Average and Variability')
+      st.image(avg_healthy, caption='Normal leaf - Average and Variability')
       st.write("---")
 
-    if st.checkbox("Differences between average parasitised and average uninfected cells"):
+    if st.checkbox("Differences between powdery mildew leafs and normal leafs"):
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
           st.warning(
-            f"* We notice this study didn't show "
-            f"patterns where we could intuitively differentiate one from another.")
+          f"* We appreciate a similar pattern here:\n"
+          f"  - Healthy leaves have a clearer green surface.\n"
+          f"  - Infected ones have more white color on the surface.\n"
+          f"However, it's still difficult to directly compare both types of leaves."
+          )
           st.image(diff_between_avgs, caption='Difference between average images')
 
     if st.checkbox("Image Montage"): 
