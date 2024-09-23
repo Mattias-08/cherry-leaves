@@ -78,10 +78,141 @@ Dataset and Preprocessing:
 - Training Data: Utilize the Kaggle dataset containing 4208 images of cherry leaves.
 Image Preprocessing: Reduce image dimensions to approximately 100x100 to optimize training time and computational resources.
 
-## Dashboard Design change !!!!!
+## Dashboard Design 
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+### Wireframes
+
+Wireframes have been used for designing the layout of dashboard. Wireframes can be found here:
+
+
+
+![Project Summary Page]()
+
+
+![Leaves Visualizer Page]()
+
+![Mildew Detector Page]()
+
+
+![Project Hypothesis Page]()
+
+
+![ML Performance Page]()
+
+A dashboard is set to present the models and data to the client.
+
+My dashboard consists of a side navigation bar linking to 5 different pages. The details of the pages are as follows:
+
+#### Page 1: Quick Project Summary
+
+- General Information
+   - Powdery mildew is a parasitic fungal disease caused by Podosphaera clandestina in cherry trees. Infected plants display white powdery spots on the leaves and stems. The lower leaves are the most affected.
+   
+   - Powdery mildew is one of the plant diseases that can be identified easily. As the infection progresses, the spots get larger and denser and it may spread to other parts of plant.
+   
+   - The disease occurs mostly in high humid and moderate temperatures showing devastating effects on the life of the host plant reducing plant harvest.
+   
+- Project Dataset
+
+    - The available dataset contains 4208 thousand images taken from different leaves, half infected and half healthy.
+
+- Link to additional information
+
+- Business Requirements
+
+    - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy and that contains powdery mildew.
+
+    - The client is interested to predict if a cherry leaf is healthy or contains powdery mildew.
+
+
+
+![Project Summary]()
+
+
+#### Page 2: Leaves Visualizer
+
+- Business requirement 1
+
+     - Checkbox 1 - Difference between average and variability image
+	 - Checkbox 2 - Difference between average healthy and infected leaves
+	 - Checkbox 3 - Image Montage
+
+![Leaves Visualizer]()
+
+
+![Average and variability image]()
+
+
+
+![Average healthy and infected leaves]()
+
+
+
+
+![Image montage_healthy]()
+
+
+
+![Image montage_powdery mildew]()
+
+
+#### Page 3: Powdery Mildew Detector
+
+- Business requirement 2
+
+     - Link to download a set of healthy and not healthy leaves images for live prediction.
+     - User Interface with a file uploader widget. The user should upload leaves images. It will display the image and a prediction statement, indicating if the leaf is healthy or not.
+     
+     - Table with image name and prediction results.
+
+     - Download button to download table.
+
+
+![Mildew detector page]()
+
+![Prediction]()
+
+#### Page 4: Project Hypothesis and Validation
+
+- This page displays the project hypothesis and the validation.
+
+
+![Hypothesis and Validation]()
+
+
+#### Page 5: ML Performance Metrics
+
+
+**Label Frequencies for Train, Validation and Test Sets**
+
+•	Train - healthy: 1472 images
+
+•	Train - powdery_mildew: 1472 images
+
+•	Validation - healthy: 210 images
+
+•	Validation - powdery_mildew: 210 images
+
+•	Test - healthy: 422 images
+
+•	Test - powdery_mildew: 422 images
+
+
+![Label frequencies]()
+
+
+**Model History - Accuracy and Losses**
+
+![Model History]()
+
+
+**Model Evaluation result**
+
+
+![Generalized performance]()
+
+The agreed accuracy criteria for the ML model performance with the client is atleast 97% accuracy. The generalized performance of the app is
+0.9988.
 
 ## Unfixed Bugs
 
