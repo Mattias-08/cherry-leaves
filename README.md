@@ -126,7 +126,7 @@ My dashboard consists of a side navigation bar linking to 5 different pages. The
 
 
 
-![Project Summary]()
+![Project Summary](docs/summary%20deployed.png)
 
 
 #### Page 2: Leaves Visualizer
@@ -137,23 +137,23 @@ My dashboard consists of a side navigation bar linking to 5 different pages. The
 	 - Checkbox 2 - Difference between average healthy and infected leaves
 	 - Checkbox 3 - Image Montage
 
-![Leaves Visualizer]()
+![Leaves Visualizer](docs/visualiser.png)
 
 
-![Average and variability image]()
-
-
-
-![Average healthy and infected leaves]()
+![Average and variability image](docs/visualiser%20dif%201.png)
 
 
 
-
-![Image montage_healthy]()
-
+![Average healthy and infected leaves](docs/visualiser%20dif%202.png)
 
 
-![Image montage_powdery mildew]()
+
+
+![Image montage_healthy](docs/visualiser%20good.png)
+
+
+
+![Image montage_powdery mildew](docs/visualiser%20bad.png)
 
 
 #### Page 3: Powdery Mildew Detector
@@ -177,7 +177,7 @@ My dashboard consists of a side navigation bar linking to 5 different pages. The
 - This page displays the project hypothesis and the validation.
 
 
-![Hypothesis and Validation]()
+![Hypothesis and Validation](docs/Hypothesis%20deployed.png)
 
 
 #### Page 5: ML Performance Metrics
@@ -197,19 +197,13 @@ My dashboard consists of a side navigation bar linking to 5 different pages. The
 
 •	Test - powdery_mildew: 422 images
 
-
-![Label frequencies]()
-
-
 **Model History - Accuracy and Losses**
-
-![Model History]()
-
 
 **Model Evaluation result**
 
+![Model performance](docs/ML%20performance%20deployed.png)
 
-![Generalized performance]()
+
 
 The agreed accuracy criteria for the ML model performance with the client is atleast 97% accuracy. The generalized performance of the app is
 0.9988.
