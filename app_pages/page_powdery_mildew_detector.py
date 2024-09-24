@@ -55,4 +55,3 @@ def page_powdery_mildew_detector_body():
       if not df_report.empty:
           st.success("Analysis Report")
           st.table(df_report)
-          st.markdown(download_dataframe_as_csv(df_report))
