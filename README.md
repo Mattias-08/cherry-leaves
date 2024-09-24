@@ -168,9 +168,9 @@ My dashboard consists of a side navigation bar linking to 5 different pages. The
      - Download button to download table.
 
 
-![Mildew detector page]()
+![Mildew detector page](docs/detection%20page.png)
 
-![Prediction]()
+![Prediction](docs/leaf%20predictiion.png)
 
 #### Page 4: Project Hypothesis and Validation
 
@@ -202,7 +202,7 @@ The graph provide a visual representation of the learning cycle for the ML model
 
 From these graphs it is evident that it is a normal learning curve. The model is neither overfitting or underfitting.
 **Model Evaluation result**
-The general accuracy of ML model is 99.88%
+The general accuracy of ML model is 99.17%
 ![Model performance](docs/ML%20performance%20deployed.png)
 
 
