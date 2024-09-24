@@ -9,7 +9,7 @@ This app is designed based on a supervised, single-label, binary classification 
 [View live project here](https://cherry-leaves-detector-4bfba1113616.herokuapp.com/)
 
 
-![Responsive image]()
+![Responsive image](docs/Responsive%20Mockup.png)
 
 ## Dataset Content
 
