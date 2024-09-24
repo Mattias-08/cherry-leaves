@@ -198,9 +198,11 @@ My dashboard consists of a side navigation bar linking to 5 different pages. The
 •	Test - powdery_mildew: 422 images
 
 **Model History - Accuracy and Losses**
+The graph provide a visual representation of the learning cycle for the ML model. The two graphs show the accuracy and loss plots as a part of the training process.
 
+From these graphs it is evident that it is a normal learning curve. The model is neither overfitting or underfitting.
 **Model Evaluation result**
-
+The general accuracy of ML model is 99.88%
 ![Model performance](docs/ML%20performance%20deployed.png)
 
 
